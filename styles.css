@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Fira Code", monospace;
+}
+
+/* Cursor blink animation */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Typewriter container styles */
+.typewriter-container {
+  position: relative;
+  display: inline-block;
+  min-height: 3em;
+}
+
+/* Cursor styles */
+.cursor-blink {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+  color: #9ca3af;
+}
+
+/* Arrow transition */
+.arrow {
+  transition: opacity 0.3s ease;
+}
+
+/* Terminal window dots */
+.window-dots::before {
+  content: "• • •";
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  color: #6b7280;
+  letter-spacing: 2px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glass effect for cards */
+.glass-effect {
+  background: rgba(31, 41, 55, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Link hover effect */
+a:hover {
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}

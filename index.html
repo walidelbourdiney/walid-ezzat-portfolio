@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walid Ezzat | Front-End Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-900 text-gray-300 min-h-screen">
+    <!-- Navigation -->
+    <nav
+      class="fixed md:top-1/2 md:-translate-y-1/2 md:right-8 top-0 left-0 right-0 p-4 flex md:flex-col md:items-end justify-center gap-4 z-10 bg-gray-900/80 backdrop-blur-sm md:bg-transparent md:w-auto md:left-auto"
+    >
+      <a href="#home" class="hover:text-cyan-400 transition-colors">home</a>
+      <a href="#projects" class="hover:text-cyan-400 transition-colors"
+        >projects</a
+      >
+      <a href="#blog" class="hover:text-cyan-400 transition-colors">blog</a>
+      <a href="#about" class="hover:text-cyan-400 transition-colors">about</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-20 md:pt-0 md:mt-20" id="home">
+      <!-- Terminal Header -->
+      <div class="w-full bg-gray-800/50 rounded-t-lg">
+        <div class="flex items-center gap-2 p-3">
+          <div class="w-3 h-3 rounded-full bg-red-500"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+          <div class="w-3 h-3 rounded-full bg-green-500"></div>
+        </div>
+      </div>
+      <div class="bg-gray-800/50 rounded-b-lg p-6 mb-12 backdrop-blur-sm">
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0">
+            <div class="w-16 h-16 rounded-full bg-gray-700 overflow-hidden">
+              <img
+                src="46676825.jpg"
+                alt="Avatar"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div class="flex align-center justify-between w-full">
+            <div class="flex flex-col">
+              <p class="text-cyan-400 mb-2">
+                $ Hello, I'm
+                <span class="text-white font-bold">Walid Ezzat</span>.
+              </p>
+              <div class="typewriter-container">
+                <span id="typewriter" class="text-gray-400"></span>
+                <span id="cursor" class="cursor-blink">_</span>
+              </div>
+            </div>
+            <a
+              href="CV/Walid-Ezzat-Resume-2025.pdf"
+              download="Walid-Ezzat-Frontend-Dev-CV.pdf"
+              class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2 border border-cyan-400/30 hover:border-cyan-400/50 px-4 py-2 rounded-lg"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <section id="projects" class="mb-12">
+        <h2 class="text-cyan-400 text-2xl mb-6">~/projects</h2>
+        <div class="grid gap-4 md:grid-cols-2">
+          <div
+            class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex flex-col justify-between"
+          >
+            <h3 class="text-xl text-cyan-400 mb-2">
+              Mood Nest-AI-Powered Mental Wellness Companion.
+            </h3>
+            <p class="text-gray-400">
+              Built a mental wellness web app featuring AI-powered journal
+              analysis and mood tracking.Implemented realtime emotional insights
+              using Cohere AI, interactive data visualizations, and an intuitive
+              emoji-based tracking system. Created a responsive UI with modern
+              React features and efficient state management using Zustand.
+            </p>
+            <div class="stacks flex gap-4 my-4">
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >React 19</span
+              >
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">Vite</span>
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >Tailwind CSS</span
+              >
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >Cohere AI</span
+              >
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >Zustand</span
+              >
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >Recharts</span
+              >
+            </div>
+            <div class="flex gap-4 links">
+              <a
+                href="https://mood-nest.vercel.app/"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
+                >View Project</a
+              >
+              <a
+                href="https://github.com/walidezzat/Mood-Nest"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
+                >View Code</a
+              >
+            </div>
+          </div>
+          <!-- More Projects -->
+          <div
+            class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex-col justify-between"
+          >
+            <h3 class="text-xl text-cyan-400 mb-2">
+              Chef Welly -AI-Powered Recipe Recommendation System.
+            </h3>
+            <p class="text-gray-400">
+              Built an intelligent recipe recommendation system that generates
+              personalized cooking suggestions based on available
+              ingredients.Implemented AI-powered recipe generation using Hugging
+              Face's Mixtral-8x7B-Instruct model, delivering detailed,
+              well-formatted recipes with ingredients lists and step-by-step
+              instructions. Created a modern,responsive interface using React 19
+              and integrated markdown rendering for enhanced recipe
+              presentation. Developed with a focus on clean code practices and
+              efficient API integration.
+            </p>
+            <div class="stacks flex gap-4 my-4">
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >React 19</span
+              >
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">Vite</span>
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >Hugging FaceInference API</span
+              >
+
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >Recharts</span
+              >
+            </div>
+            <div class="flex gap-4 links">
+              <a
+                href="https://mood-nest.vercel.app/"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
+                >View Project</a
+              >
+              <a
+                href="https://github.com/walidelbourdiney/chef-welly"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
+                >View Code</a
+              >
+            </div>
+          </div>
+          <!-- More Projects -->
+
+          <div
+            class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex flex-col justify-between"
+          >
+            <h3 class="text-xl text-cyan-400 mb-2">Meme Generator.</h3>
+            <p class="text-gray-400">
+              Developed an interactive meme generator web application that
+              allows users to create and customize memes in
+              real-time.Implemented dynamic text overlay functionality with top
+              and bottom text positioning, integrated with the Imgflip API for
+              random meme template generation. Built a responsive and intuitive
+              user interface with React, featuring real-time state management
+              and seamless API integration for instant meme creation.
+            </p>
+            <div class="stacks flex gap-4 my-4">
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >React 19</span
+              >
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">Vite</span>
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >Imgflip API</span
+              >
+
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">CSS</span>
+            </div>
+            <div class="flex gap-4 links">
+              <a
+                href="https://mood-nest.vercel.app/"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
+                >View Project</a
+              >
+              <a
+                href="https://github.com/walidelbourdiney/MemeGenerator"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
+                >View Code</a
+              >
+            </div>
+          </div>
+          <!-- More Projects -->
+          <div
+            class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex flex-col justify-between"
+          >
+            <h3 class="text-xl text-cyan-400 mb-2">
+              Weather Forecast Application.
+            </h3>
+            <p class="text-gray-400">
+              Developed a dynamic weather application that provides real-time
+              weather information for any city worldwide. Implemented a
+              responsive user interface with real-time data fetching from the
+              OpenWeather API. Features include temperature display in Celsius,
+              humidity levels, and dynamic weather condition indicators with
+              custom emoji representations. Built with vanilla JavaScript,
+              featuring asynchronous API integration, error handling, and a
+              clean, intuitive user interface. The application includes loading
+              states and comprehensive error messaging for an enhanced user
+              experience.
+            </p>
+            <div class="stacks flex gap-4 my-4">
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">HTML</span>
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">CSS</span>
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >JavaScript</span
+              >
+
+              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
+                >OpenWeather API</span
+              >
+            </div>
+            <div class="flex gap-4 links">
+              <a
+                href="https://weather-app-native-js.vercel.app/"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
+                >View Project</a
+              >
+              <a
+                href="https://github.com/walidelbourdiney/WEATHER-APP--native-JS-"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/walidelbourdiney?tab=repositories"
+          target="_blank"
+          class="text-cyan-400 hover:text-cyan-300 transition-colors mt-12 block mx-auto w-fit font-bold"
+        >
+          View More
+        </a>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="mb-12">
+        <h2 class="text-cyan-400 text-2xl mb-6">~/blog</h2>
+        <div class="grid gap-4 md:grid-cols-2">
+          <a
+            href="https://walidezzat.hashnode.dev/simplifying-react-key-concepts-of-components-props-and-code-optimization"
+            class="block group border-l-4 border-cyan-400 pl-4 hover:border-[#89b4fa] hover:no-underline transition-colors hover:bg-[#2d2f45] p-4 rounded-lg"
+            target="_blank"
+          >
+            <div
+              class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
+            >
+              <div class="text-gray-500 mb-2">2025-02-11</div>
+              <h3 class="text-xl text-white mb-2">
+                Simplifying React: Key Concepts of Components, Props, and Code
+                Optimization
+              </h3>
+              <p class="text-gray-400">
+                Break down React's core concepts with actionable examples—learn
+                to build reusable components, optimize renders, and avoid common
+                performance traps.
+              </p>
+            </div></a
+          >
+          <!--  more blog posts  -->
+          <a
+            target="_blank"
+            href="https://walidezzat.hashnode.dev/understanding-promises-asyncawait-and-the-fetch-api-in-javascript"
+            class="block group border-l-4 border-cyan-400 pl-4 hover:border-[#89b4fa] hover:no-underline transition-colors hover:bg-[#2d2f45] p-4 rounded-lg"
+          >
+            <div
+              class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
+            >
+              <div class="text-gray-500 mb-2">2024-12-15</div>
+              <h3 class="text-xl text-white mb-2">
+                Understanding Promises, Async/Await, and the Fetch API in
+                JavaScript
+              </h3>
+              <p class="text-gray-400">
+                Master asynchronous JavaScript like a pro—from Promise chains to
+                async/await patterns and real-world Fetch API implementations
+                with error handling.
+              </p>
+            </div></a
+          >
+          <!-- more blog posts -->
+          <a
+            target="_blank"
+            href="https://walidezzat.hashnode.dev/git-and-github-must-know-essentials-for-developers"
+            class="block group border-l-4 border-cyan-400 pl-4 hover:border-[#89b4fa] hover:no-underline transition-colors hover:bg-[#2d2f45] p-4 rounded-lg"
+          >
+            <div
+              class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
+            >
+              <div class="text-gray-500 mb-2">2024-11-25</div>
+              <h3 class="text-xl text-white mb-2">
+                Git and GitHub: Must-Know Essentials for Developers
+              </h3>
+              <p class="text-gray-400">
+                Collaborate with confidence: essential Git commands, GitHub
+                workflows, and pro tips to avoid merge nightmares in team
+                projects.
+              </p>
+            </div></a
+          >
+          <!-- more blog posts -->
+          <a
+            target="_blank"
+            href="https://walidezzat.hashnode.dev/error-handling-in-javascript-a-comprehensive-guide"
+            class="block group border-l-4 border-cyan-400 pl-4 hover:border-[#89b4fa] hover:no-underline transition-colors hover:bg-[#2d2f45] p-4 rounded-lg"
+          >
+            <div
+              class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
+            >
+              <div class="text-gray-500 mb-2">2024-12-25</div>
+              <h3 class="text-xl text-white mb-2">
+                Error Handling in JavaScript: A Comprehensive Guide
+              </h3>
+              <p class="text-gray-400">
+                Implementing enterprise-level error handling in JavaScript: from
+                basic try/catch blocks to custom error hierarchies and
+                asynchronous exception management.
+              </p>
+            </div></a
+          >
+          <!-- more blog posts -->
+          <a
+            target="_blank"
+            href="https://walidezzat.hashnode.dev/understanding-javascript-closures-a-beginners-guide"
+            class="block group border-l-4 border-cyan-400 pl-4 hover:border-[#89b4fa] hover:no-underline transition-colors hover:bg-[#2d2f45] p-4 rounded-lg"
+          >
+            <div
+              class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
+            >
+              <div class="text-gray-500 mb-2">2024-12-22</div>
+              <h3 class="text-xl text-white mb-2">
+                Understanding JavaScript Closures: A Beginner's Guide
+              </h3>
+              <p class="text-gray-400">
+                learn how closures work under the hood, their practical
+                applications in encapsulation and data privacy, and common
+                patterns every professional developer should know.
+              </p>
+            </div></a
+          >
+          <!-- more blog posts -->
+          <a
+            target="_blank"
+            href="https://walidezzat.hashnode.dev/front-end-developers-starter-guide-to-terminal-commands"
+            class="block group border-l-4 border-cyan-400 pl-4 hover:border-[#89b4fa] hover:no-underline transition-colors hover:bg-[#2d2f45] p-4 rounded-lg"
+          >
+            <div
+              class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
+            >
+              <div class="text-gray-500 mb-2">2024-11-26</div>
+              <h3 class="text-xl text-white mb-2">
+                Front-End Developer's Starter Guide to Terminal Commands
+              </h3>
+              <p class="text-gray-400">
+                streamline your workflow with must-know commands for version
+                control, package management, and build processes in professional
+                environments.
+              </p>
+            </div></a
+          >
+          <!-- more blog posts -->
+        </div>
+        <a
+          href="https://walidezzat.hashnode.dev/"
+          target="_blank"
+          class="text-cyan-400 hover:text-cyan-300 transition-colors mt-12 block mx-auto w-fit font-bold"
+        >
+          View More
+        </a>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="mb-12">
+        <h2 class="text-cyan-400 text-2xl mb-6">~/about</h2>
+        <div
+          class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
+        >
+          <div class="flex flex-col">
+            <p class="text-cyan-400 mb-4">$ cat about.txt</p>
+            <div class="typewriter-container">
+              <span class="text-gray-400"
+                >I'm a Front-End Developer with a passion for creating beautiful
+                and functional web experiences. I specialize in React,
+                JavaScript, and modern web technologies. When I'm not coding, I
+                write technical articles to share my knowledge with the
+                developer community. I believe in clean code, performance
+                optimization, and continuous learning.</span
+              >
+              <span id="about-cursor" class="cursor-blink">_</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add this to your HTML before the closing </main> tag -->
+      <section id="contact" class="mb-12">
+        <h2 class="text-cyan-400 text-2xl mb-6">~/contact</h2>
+        <div
+          class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
+        >
+          <!-- Terminal-style command prompt -->
+          <div class="mb-6">
+            <p class="text-cyan-400 mb-2">$ Send me a message:</p>
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400">→</span>
+              <span class="text-gray-400"
+                >Just fill this form <span class="cursor-blink">_</span></span
+              >
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form
+            id="contact-form"
+            action="https://formsubmit.co/31f793752d97d350f937f027e2bab96e"
+            method="POST"
+            class="space-y-4"
+          >
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="block text-cyan-400 mb-2">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white focus:border-cyan-400 focus:outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-cyan-400 mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white focus:border-cyan-400 focus:outline-none transition-colors"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="message" class="block text-cyan-400 mb-2"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                class="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white focus:border-cyan-400 focus:outline-none transition-colors"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-cyan-400/10 border border-cyan-400 text-cyan-400 px-6 py-3 rounded-lg hover:bg-cyan-400/20 transition-colors flex items-center gap-2"
+            >
+              <span>Send Message</span>
+              <span class="text-xl">→</span>
+            </button>
+          </form>
+
+          <!-- Social Links -->
+          <div class="mt-8 pt-6 border-t border-gray-700">
+            <p class="text-cyan-400 mb-4">$ Connect with me:</p>
+            <div class="flex items-center justify-between">
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="mailto:walidelbourdiney25@gmail.com?subject=Portfolio%20Inquiry"
+                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2"
+                >
+                  <div class="flex items-center gap-2">
+                    <img width="20" src="icons/Email.png" alt="Email icon" />
+                    Email
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/walidelbourdiney"
+                  target="_blank"
+                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2"
+                >
+                  <div class="flex items-center gap-2">
+                    <img width="20" src="icons/github.png" alt="GitHub icon" />
+                    GitHub
+                  </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/walid-ezzat/"
+                  target="_blank"
+                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2"
+                >
+                  <div class="flex items-center gap-2">
+                    <img
+                      width="20"
+                      src="icons/linkedin.png"
+                      alt="LinkedIn icon"
+                    />
+                    LinkedIn
+                  </div>
+                </a>
+                <a
+                  href="https://x.com/walidezzat90"
+                  target="_blank"
+                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2"
+                >
+                  <div class="flex items-center gap-2">
+                    <img width="20" src="icons/X.png" alt="X icon" />
+                    @walidezzat90
+                  </div>
+                </a>
+              </div>
+              <a
+                href="CV/Walid-Ezzat-Resume-2025.pdf"
+                download="Walid-Ezzat-Frontend-Dev-CV.pdf"
+                class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2 border border-cyan-400/30 hover:border-cyan-400/50 px-4 py-2 rounded-lg"
+              >
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Add this before closing </body> -->
+    <footer
+      class="bg-gray-900/80 border-t border-cyan-400/20 backdrop-blur-sm py-8"
+    >
+      <div class="container mx-auto px-4">
+        <!-- Terminal-inspired divider -->
+        <div class="flex items-center mb-6">
+          <div
+            class="flex-1 h-px bg-gradient-to-r from-cyan-400/0 via-cyan-400/40 to-cyan-400/0"
+          ></div>
+          <span class="px-4 text-cyan-400 font-mono text-sm">~/footer</span>
+          <div
+            class="flex-1 h-px bg-gradient-to-r from-cyan-400/0 via-cyan-400/40 to-cyan-400/0"
+          ></div>
+        </div>
+
+        <!-- Main footer content -->
+
+        <div class="text-center">
+          <p class="text-gray-400 font-mono text-sm mb-2">$ whoami</p>
+          <p class="text-cyan-400">Walid Ezzat</p>
+          <p class="text-gray-400 text-xs mt-4">
+            © <span id="year"></span> — All rights reserved
+          </p>
+        </div>
+
+        <!-- Bottom divider -->
+        <div class="mt-8 pt-6 border-t border-cyan-400/10"></div>
+      </div>
+    </footer>
+
+    <!-- Add this script for dynamic year -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
