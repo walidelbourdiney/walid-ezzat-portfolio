@@ -9,19 +9,15 @@
   </head>
   <body class="bg-gray-900 text-gray-300 min-h-screen">
     <!-- Navigation -->
-    <nav
-      class="fixed md:top-1/2 md:-translate-y-1/2 md:right-8 top-0 left-0 right-0 p-4 flex md:flex-col md:items-end justify-center gap-4 z-10 bg-gray-900/80 backdrop-blur-sm md:bg-transparent md:w-auto md:left-auto"
-    >
-      <a href="#home" class="hover:text-cyan-400 transition-colors">home</a>
-      <a href="#projects" class="hover:text-cyan-400 transition-colors"
-        >projects</a
-      >
-      <a href="#blog" class="hover:text-cyan-400 transition-colors">blog</a>
-      <a href="#about" class="hover:text-cyan-400 transition-colors">about</a>
+    <nav class="fixed top-0 left-0 right-0 p-4 flex justify-center md:justify-end gap-4 z-10 bg-gray-900/80 backdrop-blur-sm">
+      <a href="#home" class="hover:text-cyan-400 transition-colors text-sm md:text-base">home</a>
+      <a href="#projects" class="hover:text-cyan-400 transition-colors text-sm md:text-base">projects</a>
+      <a href="#blog" class="hover:text-cyan-400 transition-colors text-sm md:text-base">blog</a>
+      <a href="#about" class="hover:text-cyan-400 transition-colors text-sm md:text-base">about</a>
     </nav>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 pt-20 md:pt-0 md:mt-20" id="home">
+    <main class="container mx-auto px-4 pt-20 md:pt-24" id="home">
       <!-- Terminal Header -->
       <div class="w-full bg-gray-800/50 rounded-t-lg">
         <div class="flex items-center gap-2 p-3">
@@ -30,8 +26,8 @@
           <div class="w-3 h-3 rounded-full bg-green-500"></div>
         </div>
       </div>
-      <div class="bg-gray-800/50 rounded-b-lg p-6 mb-12 backdrop-blur-sm">
-        <div class="flex items-start gap-4">
+      <div class="bg-gray-800/50 rounded-b-lg p-4 md:p-6 mb-12 backdrop-blur-sm">
+        <div class="flex flex-col md:flex-row items-start gap-4">
           <div class="flex-shrink-0">
             <div class="w-16 h-16 rounded-full bg-gray-700 overflow-hidden">
               <img
@@ -41,21 +37,21 @@
               />
             </div>
           </div>
-          <div class="flex align-center justify-between w-full">
+          <div class="flex flex-col md:flex-row align-center justify-between w-full gap-4">
             <div class="flex flex-col">
-              <p class="text-cyan-400 mb-2">
+              <p class="text-cyan-400 mb-2 text-sm md:text-base">
                 $ Hello, I'm
                 <span class="text-white font-bold">Walid Ezzat</span>.
               </p>
               <div class="typewriter-container">
-                <span id="typewriter" class="text-gray-400"></span>
+                <span id="typewriter" class="text-gray-400 text-sm md:text-base"></span>
                 <span id="cursor" class="cursor-blink">_</span>
               </div>
             </div>
             <a
               href="CV/Walid-Ezzat-Resume-2025.pdf"
               download="Walid-Ezzat-Frontend-Dev-CV.pdf"
-              class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2 border border-cyan-400/30 hover:border-cyan-400/50 px-4 py-2 rounded-lg"
+              class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center border border-cyan-400/30 hover:border-cyan-400/50 px-4 rounded-lg text-sm md:text-base whitespace-nowrap"
             >
               Download CV
             </a>
@@ -65,176 +61,131 @@
 
       <!-- Projects Section -->
       <section id="projects" class="mb-12">
-        <h2 class="text-cyan-400 text-2xl mb-6">~/projects</h2>
-        <div class="grid gap-4 md:grid-cols-2">
+        <h2 class="text-cyan-400 text-xl md:text-2xl mb-6">~/projects</h2>
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
           <div
-            class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex flex-col justify-between"
+            class="bg-gray-800/50 rounded-lg p-4 md:p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex flex-col justify-between"
           >
-            <h3 class="text-xl text-cyan-400 mb-2">
-              Mood Nest-AI-Powered Mental Wellness Companion.
+            <h3 class="text-xl text-cyan-400 mb-2 break-words">
+              Admin Portal - Bilingual Healthcare Management System.
             </h3>
-            <p class="text-gray-400">
-              Built a mental wellness web app featuring AI-powered journal
-              analysis and mood tracking.Implemented realtime emotional insights
-              using Cohere AI, interactive data visualizations, and an intuitive
-              emoji-based tracking system. Created a responsive UI with modern
-              React features and efficient state management using Zustand.
+            <p class="text-gray-400 text-sm md:text-base mb-4">
+              Developed a comprehensive admin portal for healthcare management with full Arabic/English bilingual support. Implemented secure authentication, protected routes, and real-time data management. Created a responsive dashboard with customer management, appointment scheduling, and analytics features. Built with modern React practices, featuring RTL/LTR layout support, form validation, and efficient state management.
             </p>
-            <div class="stacks flex gap-4 my-4">
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >React 19</span
+            <div class="stacks flex flex-wrap gap-2 my-4 max-w-full">
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">React 19</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Vite</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Tailwind CSS</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">i18next</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Zustand</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">React Query</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Formik</span>
+            </div>
+            <div class="flex gap-4 links mt-auto">
+              <a
+                href="https://portal-sooty-pi.vercel.app"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors text-sm md:text-base"
+                >View Project</a
               >
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">Vite</span>
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >Tailwind CSS</span
-              >
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >Cohere AI</span
-              >
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >Zustand</span
-              >
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >Recharts</span
+              <a
+                href="https://github.com/walidelbourdiney/portal"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors text-sm md:text-base"
+                >View Code</a
               >
             </div>
-            <div class="flex gap-4 links">
+          </div>
+          <!-- More Projects -->
+
+          <div
+            class="bg-gray-800/50 rounded-lg p-4 md:p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex flex-col justify-between"
+          >
+            <h3 class="text-xl text-cyan-400 mb-2 break-words">
+              Mood Nest-AI-Powered Mental Wellness Companion.
+            </h3>
+            <p class="text-gray-400 text-sm md:text-base mb-4">
+              Built a mental wellness web app featuring AI-powered journal analysis and mood tracking. Implemented realtime emotional insights using Cohere AI, interactive data visualizations, and an intuitive emoji-based tracking system. Created a responsive UI with modern React features and efficient state management using Zustand.
+            </p>
+            <div class="stacks flex flex-wrap gap-2 my-4 max-w-full">
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">React 19</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Vite</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Tailwind CSS</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Cohere AI</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Zustand</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Recharts</span>
+            </div>
+            <div class="flex gap-4 links mt-auto">
               <a
                 href="https://mood-nest.vercel.app/"
-                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors text-sm md:text-base"
                 >View Project</a
               >
               <a
                 href="https://github.com/walidezzat/Mood-Nest"
-                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
+                class="text-cyan-400 hover:text-cyan-300 transition-colors text-sm md:text-base"
                 >View Code</a
               >
             </div>
           </div>
           <!-- More Projects -->
           <div
-            class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex-col justify-between"
+            class="bg-gray-800/50 rounded-lg p-4 md:p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex flex-col justify-between"
           >
-            <h3 class="text-xl text-cyan-400 mb-2">
+            <h3 class="text-xl text-cyan-400 mb-2 break-words">
               Chef Welly -AI-Powered Recipe Recommendation System.
             </h3>
-            <p class="text-gray-400">
-              Built an intelligent recipe recommendation system that generates
-              personalized cooking suggestions based on available
-              ingredients.Implemented AI-powered recipe generation using Hugging
-              Face's Mixtral-8x7B-Instruct model, delivering detailed,
-              well-formatted recipes with ingredients lists and step-by-step
-              instructions. Created a modern,responsive interface using React 19
-              and integrated markdown rendering for enhanced recipe
-              presentation. Developed with a focus on clean code practices and
-              efficient API integration.
+            <p class="text-gray-400 text-sm md:text-base mb-4">
+              Built an intelligent recipe recommendation system that generates personalized cooking suggestions based on available ingredients. Implemented AI-powered recipe generation using Hugging Face's Mixtral-8x7B-Instruct model, delivering detailed, well-formatted recipes with ingredients lists and step-by-step instructions. Created a modern, responsive interface using React 19 and integrated markdown rendering for enhanced recipe presentation.
             </p>
-            <div class="stacks flex gap-4 my-4">
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >React 19</span
-              >
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">Vite</span>
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >Hugging FaceInference API</span
-              >
-
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >Recharts</span
-              >
+            <div class="stacks flex flex-wrap gap-2 my-4 max-w-full">
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">React 19</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Vite</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Hugging Face Inference API</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Recharts</span>
             </div>
-            <div class="flex gap-4 links">
-              <a
-                href="https://mood-nest.vercel.app/"
-                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
-                >View Project</a
-              >
-              <a
-                href="https://github.com/walidelbourdiney/chef-welly"
-                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
-                >View Code</a
-              >
+            <div class="flex gap-4 links mt-auto">
+              <a href="https://mood-nest.vercel.app/" class="text-cyan-400 hover:text-cyan-300 transition-colors text-sm md:text-base">View Project</a>
+              <a href="https://github.com/walidelbourdiney/chef-welly" class="text-cyan-400 hover:text-cyan-300 transition-colors text-sm md:text-base">View Code</a>
             </div>
           </div>
           <!-- More Projects -->
 
           <div
-            class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex flex-col justify-between"
+            class="bg-gray-800/50 rounded-lg p-4 md:p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex flex-col justify-between"
           >
-            <h3 class="text-xl text-cyan-400 mb-2">Meme Generator.</h3>
-            <p class="text-gray-400">
-              Developed an interactive meme generator web application that
-              allows users to create and customize memes in
-              real-time.Implemented dynamic text overlay functionality with top
-              and bottom text positioning, integrated with the Imgflip API for
-              random meme template generation. Built a responsive and intuitive
-              user interface with React, featuring real-time state management
-              and seamless API integration for instant meme creation.
+            <h3 class="text-xl text-cyan-400 mb-2 break-words">Meme Generator.</h3>
+            <p class="text-gray-400 text-sm md:text-base mb-4">
+              Developed an interactive meme generator web application that allows users to create and customize memes in real-time. Implemented dynamic text overlay functionality with top and bottom text positioning, integrated with the Imgflip API for random meme template generation. Built a responsive and intuitive user interface with React, featuring real-time state management and seamless API integration for instant meme creation.
             </p>
-            <div class="stacks flex gap-4 my-4">
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >React 19</span
-              >
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">Vite</span>
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >Imgflip API</span
-              >
-
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">CSS</span>
+            <div class="stacks flex flex-wrap gap-2 my-4 max-w-full">
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">React 19</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Vite</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">Imgflip API</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">CSS</span>
             </div>
-            <div class="flex gap-4 links">
-              <a
-                href="https://mood-nest.vercel.app/"
-                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
-                >View Project</a
-              >
-              <a
-                href="https://github.com/walidelbourdiney/MemeGenerator"
-                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
-                >View Code</a
-              >
+            <div class="flex gap-4 links mt-auto">
+              <a href="https://mood-nest.vercel.app/" class="text-cyan-400 hover:text-cyan-300 transition-colors text-sm md:text-base">View Project</a>
+              <a href="https://github.com/walidelbourdiney/MemeGenerator" class="text-cyan-400 hover:text-cyan-300 transition-colors text-sm md:text-base">View Code</a>
             </div>
           </div>
           <!-- More Projects -->
           <div
-            class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex flex-col justify-between"
+            class="bg-gray-800/50 rounded-lg p-4 md:p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm flex flex-col justify-between"
           >
-            <h3 class="text-xl text-cyan-400 mb-2">
+            <h3 class="text-xl text-cyan-400 mb-2 break-words">
               Weather Forecast Application.
             </h3>
-            <p class="text-gray-400">
-              Developed a dynamic weather application that provides real-time
-              weather information for any city worldwide. Implemented a
-              responsive user interface with real-time data fetching from the
-              OpenWeather API. Features include temperature display in Celsius,
-              humidity levels, and dynamic weather condition indicators with
-              custom emoji representations. Built with vanilla JavaScript,
-              featuring asynchronous API integration, error handling, and a
-              clean, intuitive user interface. The application includes loading
-              states and comprehensive error messaging for an enhanced user
-              experience.
+            <p class="text-gray-400 text-sm md:text-base mb-4">
+              Developed a dynamic weather application that provides real-time weather information for any city worldwide. Implemented a responsive user interface with real-time data fetching from the OpenWeather API. Features include temperature display in Celsius, humidity levels, and dynamic weather condition indicators with custom emoji representations. Built with vanilla JavaScript, featuring asynchronous API integration, error handling, and a clean, intuitive user interface.
             </p>
-            <div class="stacks flex gap-4 my-4">
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">HTML</span>
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg">CSS</span>
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >JavaScript</span
-              >
-
-              <span class="text-cyan-400 p-2 bg-gray-700 rounded-lg"
-                >OpenWeather API</span
-              >
+            <div class="stacks flex flex-wrap gap-2 my-4 max-w-full">
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">HTML</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">CSS</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">JavaScript</span>
+              <span class="text-cyan-400 px-2 py-1 bg-gray-700 rounded-lg text-xs md:text-sm whitespace-nowrap">OpenWeather API</span>
             </div>
-            <div class="flex gap-4 links">
-              <a
-                href="https://weather-app-native-js.vercel.app/"
-                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
-                >View Project</a
-              >
-              <a
-                href="https://github.com/walidelbourdiney/WEATHER-APP--native-JS-"
-                class="text-cyan-400 hover:text-cyan-300 transition-colors mt-4"
-                >View Code</a
-              >
+            <div class="flex gap-4 links mt-auto">
+              <a href="https://weather-app-native-js.vercel.app/" class="text-cyan-400 hover:text-cyan-300 transition-colors text-sm md:text-base">View Project</a>
+              <a href="https://github.com/walidelbourdiney/WEATHER-APP--native-JS-" class="text-cyan-400 hover:text-cyan-300 transition-colors text-sm md:text-base">View Code</a>
             </div>
           </div>
         </div>
@@ -249,22 +200,22 @@
 
       <!-- Blog Section -->
       <section id="blog" class="mb-12">
-        <h2 class="text-cyan-400 text-2xl mb-6">~/blog</h2>
-        <div class="grid gap-4 md:grid-cols-2">
+        <h2 class="text-cyan-400 text-xl md:text-2xl mb-6">~/blog</h2>
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
           <a
             href="https://walidezzat.hashnode.dev/simplifying-react-key-concepts-of-components-props-and-code-optimization"
             class="block group border-l-4 border-cyan-400 pl-4 hover:border-[#89b4fa] hover:no-underline transition-colors hover:bg-[#2d2f45] p-4 rounded-lg"
             target="_blank"
           >
             <div
-              class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
+              class="bg-gray-800/50 rounded-lg p-4 md:p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
             >
-              <div class="text-gray-500 mb-2">2025-02-11</div>
-              <h3 class="text-xl text-white mb-2">
+              <div class="text-gray-500 mb-2 text-xs md:text-sm">2025-02-11</div>
+              <h3 class="text-lg md:text-xl text-white mb-2 break-words">
                 Simplifying React: Key Concepts of Components, Props, and Code
                 Optimization
               </h3>
-              <p class="text-gray-400">
+              <p class="text-gray-400 text-sm md:text-base">
                 Break down React's core concepts with actionable examples—learn
                 to build reusable components, optimize renders, and avoid common
                 performance traps.
@@ -385,41 +336,37 @@
 
       <!-- About Section -->
       <section id="about" class="mb-12">
-        <h2 class="text-cyan-400 text-2xl mb-6">~/about</h2>
-        <div
-          class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
-        >
+        <h2 class="text-cyan-400 text-xl md:text-2xl mb-6">~/about</h2>
+        <div class="bg-gray-800/50 rounded-lg p-4 md:p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm">
           <div class="flex flex-col">
-            <p class="text-cyan-400 mb-4">$ cat about.txt</p>
+            <p class="text-cyan-400 mb-4 text-sm md:text-base">$ cat about.txt</p>
             <div class="typewriter-container">
-              <span class="text-gray-400"
-                >I'm a Front-End Developer with a passion for creating beautiful
+              <span class="text-gray-400 text-sm md:text-base">
+                I'm a Front-End Developer with a passion for creating beautiful
                 and functional web experiences. I specialize in React,
-                JavaScript, and modern web technologies. When I'm not coding, I
-                write technical articles to share my knowledge with the
-                developer community. I believe in clean code, performance
-                optimization, and continuous learning.</span
-              >
+                JavaScript, tailwindcss, and modern web technologies. When I'm
+                not coding, I write technical articles to share my knowledge with
+                the developer community. I believe in clean code, performance
+                optimization, and continuous learning.
+              </span>
               <span id="about-cursor" class="cursor-blink">_</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Add this to your HTML before the closing </main> tag -->
+      <!-- Contact Section -->
       <section id="contact" class="mb-12">
-        <h2 class="text-cyan-400 text-2xl mb-6">~/contact</h2>
-        <div
-          class="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm"
-        >
+        <h2 class="text-cyan-400 text-xl md:text-2xl mb-6">~/contact</h2>
+        <div class="bg-gray-800/50 rounded-lg p-4 md:p-6 hover:bg-gray-800/70 transition-colors backdrop-blur-sm">
           <!-- Terminal-style command prompt -->
           <div class="mb-6">
-            <p class="text-cyan-400 mb-2">$ Send me a message:</p>
+            <p class="text-cyan-400 mb-2 text-sm md:text-base">$ Send me a message:</p>
             <div class="flex items-center gap-2">
               <span class="text-cyan-400">→</span>
-              <span class="text-gray-400"
-                >Just fill this form <span class="cursor-blink">_</span></span
-              >
+              <span class="text-gray-400 text-sm md:text-base">
+                Just fill this form <span class="cursor-blink">_</span>
+              </span>
             </div>
           </div>
 
@@ -430,45 +377,41 @@
             method="POST"
             class="space-y-4"
           >
-            <div class="grid md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label for="name" class="block text-cyan-400 mb-2">Name</label>
+                <label for="name" class="block text-cyan-400 mb-2 text-sm md:text-base">Name</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   required
-                  class="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white focus:border-cyan-400 focus:outline-none transition-colors"
+                  class="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white focus:border-cyan-400 focus:outline-none transition-colors text-sm md:text-base"
                 />
               </div>
               <div>
-                <label for="email" class="block text-cyan-400 mb-2"
-                  >Email</label
-                >
+                <label for="email" class="block text-cyan-400 mb-2 text-sm md:text-base">Email</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   required
-                  class="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white focus:border-cyan-400 focus:outline-none transition-colors"
+                  class="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white focus:border-cyan-400 focus:outline-none transition-colors text-sm md:text-base"
                 />
               </div>
             </div>
             <div>
-              <label for="message" class="block text-cyan-400 mb-2"
-                >Message</label
-              >
+              <label for="message" class="block text-cyan-400 mb-2 text-sm md:text-base">Message</label>
               <textarea
                 id="message"
                 name="message"
                 rows="4"
                 required
-                class="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white focus:border-cyan-400 focus:outline-none transition-colors"
+                class="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-white focus:border-cyan-400 focus:outline-none transition-colors text-sm md:text-base"
               ></textarea>
             </div>
             <button
               type="submit"
-              class="bg-cyan-400/10 border border-cyan-400 text-cyan-400 px-6 py-3 rounded-lg hover:bg-cyan-400/20 transition-colors flex items-center gap-2"
+              class="bg-cyan-400/10 border border-cyan-400 text-cyan-400 px-6 py-3 rounded-lg hover:bg-cyan-400/20 transition-colors flex items-center gap-2 text-sm md:text-base"
             >
               <span>Send Message</span>
               <span class="text-xl">→</span>
@@ -477,12 +420,12 @@
 
           <!-- Social Links -->
           <div class="mt-8 pt-6 border-t border-gray-700">
-            <p class="text-cyan-400 mb-4">$ Connect with me:</p>
-            <div class="flex items-center justify-between">
+            <p class="text-cyan-400 mb-4 text-sm md:text-base">$ Connect with me:</p>
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div class="flex flex-wrap gap-4">
                 <a
                   href="mailto:walidelbourdiney25@gmail.com?subject=Portfolio%20Inquiry"
-                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2"
+                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2 text-sm md:text-base whitespace-nowrap"
                 >
                   <div class="flex items-center gap-2">
                     <img width="20" src="icons/Email.png" alt="Email icon" />
@@ -492,7 +435,7 @@
                 <a
                   href="https://github.com/walidelbourdiney"
                   target="_blank"
-                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2"
+                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2 text-sm md:text-base"
                 >
                   <div class="flex items-center gap-2">
                     <img width="20" src="icons/github.png" alt="GitHub icon" />
@@ -502,21 +445,17 @@
                 <a
                   href="https://www.linkedin.com/in/walid-ezzat/"
                   target="_blank"
-                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2"
+                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2 text-sm md:text-base"
                 >
                   <div class="flex items-center gap-2">
-                    <img
-                      width="20"
-                      src="icons/linkedin.png"
-                      alt="LinkedIn icon"
-                    />
+                    <img width="20" src="icons/linkedin.png" alt="LinkedIn icon" />
                     LinkedIn
                   </div>
                 </a>
                 <a
                   href="https://x.com/walidezzat90"
                   target="_blank"
-                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2"
+                  class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2 text-sm md:text-base"
                 >
                   <div class="flex items-center gap-2">
                     <img width="20" src="icons/X.png" alt="X icon" />
@@ -527,7 +466,7 @@
               <a
                 href="CV/Walid-Ezzat-Resume-2025.pdf"
                 download="Walid-Ezzat-Frontend-Dev-CV.pdf"
-                class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2 border border-cyan-400/30 hover:border-cyan-400/50 px-4 py-2 rounded-lg"
+                class="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2 border border-cyan-400/30 hover:border-cyan-400/50 px-4 py-2 rounded-lg text-sm md:text-base whitespace-nowrap"
               >
                 Download CV
               </a>
@@ -536,27 +475,21 @@
         </div>
       </section>
     </main>
-    <!-- Add this before closing </body> -->
-    <footer
-      class="bg-gray-900/80 border-t border-cyan-400/20 backdrop-blur-sm py-8"
-    >
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/80 border-t border-cyan-400/20 backdrop-blur-sm py-8">
       <div class="container mx-auto px-4">
         <!-- Terminal-inspired divider -->
         <div class="flex items-center mb-6">
-          <div
-            class="flex-1 h-px bg-gradient-to-r from-cyan-400/0 via-cyan-400/40 to-cyan-400/0"
-          ></div>
-          <span class="px-4 text-cyan-400 font-mono text-sm">~/footer</span>
-          <div
-            class="flex-1 h-px bg-gradient-to-r from-cyan-400/0 via-cyan-400/40 to-cyan-400/0"
-          ></div>
+          <div class="flex-1 h-px bg-gradient-to-r from-cyan-400/0 via-cyan-400/40 to-cyan-400/0"></div>
+          <span class="px-4 text-cyan-400 font-mono text-xs md:text-sm">~/footer</span>
+          <div class="flex-1 h-px bg-gradient-to-r from-cyan-400/0 via-cyan-400/40 to-cyan-400/0"></div>
         </div>
 
         <!-- Main footer content -->
-
         <div class="text-center">
-          <p class="text-gray-400 font-mono text-sm mb-2">$ whoami</p>
-          <p class="text-cyan-400">Walid Ezzat</p>
+          <p class="text-gray-400 font-mono text-xs md:text-sm mb-2">$ whoami</p>
+          <p class="text-cyan-400 text-sm md:text-base">Walid Ezzat</p>
           <p class="text-gray-400 text-xs mt-4">
             © <span id="year"></span> — All rights reserved
           </p>
